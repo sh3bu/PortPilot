@@ -1,9 +1,9 @@
 # PortPilot
 
-PyPortScan is a Python-based port scanning tool that allows users to quickly and efficiently scan a target machine for open ports. Built using socket programming, this tool supports both TCP and UDP scans and provides verbose output to make it easy for users to interpret the scan results.
+PortPilot is a Python-based port scanning tool that allows users to quickly and efficiently scan a target machine for open ports. Built using socket programming, this tool supports both TCP and UDP scans and provides verbose output to make it easy for users to interpret the scan results.
 
 #### Usage
-To use PyPortScan, simply run the pyportscan.py file from the command line with the appropriate arguments:
+To use PortPilot, simply run the portpilot.py file from the command line with the appropriate arguments:
 
 ```python portpilot.py <ip_address> <start_port> <end_port> <scan_type>```
 
@@ -19,7 +19,7 @@ For example, to scan the IP address 192.168.1.1 for open TCP ports between 1 and
 ```python portpilot.py 192.168.1.1 1 1024 tcp```
 
 #### Features
-PyPortScan includes the following features:
+PortPilot includes the following features:
 
 - Support for TCP and UDP scans
 - Multi-threading for improved scan speed
@@ -27,7 +27,7 @@ PyPortScan includes the following features:
 - Ability to specify a range of ports to scan
 
 #### Installation
-To install PyPortScan, simply clone the repository and install the required dependencies:
+To install PortPilot, simply clone the repository and install the required dependencies:
 
 ```
 git clone https://github.com/sh3bu/PortPilot.git
