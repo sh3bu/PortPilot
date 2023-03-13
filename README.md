@@ -1,7 +1,37 @@
 # PortPilot
 
-PortPilotis a Python command-line tool that allows users to scan a target machine for open ports. Built using socket programming, this tool supports both TCP and UDP scans and provides verbose output to make it easy for users to interpret the scan results.
+PyPortScan is a Python-based port scanning tool that allows users to quickly and efficiently scan a target machine for open ports. Built using socket programming, this tool supports both TCP and UDP scans and provides verbose output to make it easy for users to interpret the scan results.
 
-With PortPilot, users can specify a range of ports to scan, allowing for quick and efficient port scanning. Multi-threading is also implemented to improve scan speed, with the tool able to scan multiple ports at the same time.
+#### Usage
+To use PyPortScan, simply run the pyportscan.py file from the command line with the appropriate arguments:
 
-PortPilot is an ideal tool for system administrators, network engineers, or cybersecurity professionals who need to identify open ports on a target machine. With its simple yet powerful interface, PyPortScan provides users with a comprehensive understanding of the security posture of their network and enables them to take appropriate action to secure their systems.
+```python portpilot.py <ip_address> <start_port> <end_port> <scan_type>```
+
+Where:
+
+- <ip_address> is the IP address of the target machine
+- <start_port> is the starting port number for the scan
+- <end_port> is the ending port number for the scan
+- <scan_type> is the type of scan to perform (either tcp or udp)
+
+For example, to scan the IP address 192.168.1.1 for open TCP ports between 1 and 1024, run the following command:
+
+```python portpilot.py 192.168.1.1 1 1024 tcp```
+
+#### Features
+PyPortScan includes the following features:
+
+- Support for TCP and UDP scans
+- Multi-threading for improved scan speed
+- Verbose output for easy interpretation of scan results
+- Ability to specify a range of ports to scan
+
+#### Installation
+To install PyPortScan, simply clone the repository and install the required dependencies:
+
+```
+git clone https://github.com/sh3bu/PortPilot.git
+cd PortPilot
+pip install -r requirements.txt
+```
+
